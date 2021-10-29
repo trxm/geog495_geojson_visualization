@@ -24,8 +24,15 @@
        overflow-y: scroll;
      }
 
+     @media screen and (max-width: 1024px) {
+       #side-panel {
+         display: none;
+       }
+     }
+
      #map {
        flex-grow: 1;
+
      }
 
      button {
@@ -98,9 +105,9 @@
             'type': 'circle',
             'source': 'restaurants',
             'paint': {
-              'circle-radius': 8,
-              'circle-stroke-width': 2,
-              'circle-color': 'red',
+              'circle-radius': 9,
+              'circle-stroke-width': 1,
+              'circle-color': 'purple',
               'circle-stroke-color': 'white'
             }
           });
